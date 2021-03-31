@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina4
+    </title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+<h1 align="center">CATÁLOGO DE ARTE</h1><br>
+<h3>Introduce los términos de la búsqueda:</h3>
+    <main>
+        <!--
+            action = url a donde se mandan los datos del formulario
+            GET    = Los datos se mandan en URL
+            POST   = Se mandan con la página (body)
+
+            POST
+                universidad=IPN = value
+                escuela=UPIIZ = value
+                ramaconocimiento=2 =value
+                grado=3
+                estatus=2
+                promedio=8
+                semestre=4
+
+            GET
+                ?universidad=IPN&escuela=ESCOM&ramaconocimiento=2&grado=3&estatus=2&promedio=8&semestre=4 
+        -->
+
+        <form action="registro.php" method="GET">
+           
+            <table align="center"  >
+              <tr>
+                
+                    <td ><p align="center">OBRA<br></p>
+                    <label for="ti" >Título:</label><input type="text" name="ti" id="ti" value="">
+                    <label for="au">Autor:</label><input type="text" name="au" id="au" value="">
+                    </td>
+                    <td ><p align="center">TIPO<br></p>
+                        <label >
+                            <input type="checkbox" value="1" name="estatus" id="estatus"> Escultura
+                        </label><br>
+                
+                        <label>
+                            <input type="checkbox" value="2" name="estatus" id ="estatus"> Arquitectura
+                        </label>
+                    </label><br>
+                
+                    <label>
+                        <input type="checkbox" value="3" name="estatus" id ="estatus"> Pintura
+                    </label>
+                    </td>
+                    <td><p align="center">DISPONIBILIDAD</p>
+                        <br>
+                        <label>
+                            <input type="radio" value="2" name="estatus" id ="estatus">Museo/Acceso público
+                        </label>
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" value="3" name="estatus" id ="estatus"> Colección privada
+                    </label>
+                    </td>
+                    <td><p align="center"><label for="est">ESTILO</label></p>
+                        <select name="est" id="est">
+                            <option value="1">Clásico</option>
+                            <option value="2">Gótico</option>
+                            <option value="3">Posmodernista</option>
+                            <option value="4">Biblico</option>
+                            <option value="5">Infantil</option>
+                        </select>
+                    
+                    </td>
+
+            </tr>
+            <tr> 
+           <td><label for="su" >Háganos saber sus sugerencias:</label><input type="text" name="su" id="su" value=""> </td>  
+            </tr>
+            <tr>
+                <td><input type="submit" value="Buscar"></td>
+            </tr>
+               
+                
+            </table>
+         </form>
+
+    </main>
+
+    <footer>
+    </footer>
+    <p><a href="examen2_avc.html">Página de los Enlaces</a></p> 
+</body>
+</html>
